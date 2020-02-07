@@ -6,3 +6,32 @@ body {
     font-family: Arial;
 }
 
+.horaire-conteneur {
+
+    .semaine {
+        text-align: center;
+        font-weight: 700;
+        font-size: 0.9em;
+    }
+
+    .heures {
+        
+    }
+
+    .cours {
+        background-color: #EEEEEE;
+
+        .case {
+            background-color: #FFFFFF;
+            text-align: center;
+
+            span {
+                font-size: 0.7em;
+
+                &:first-child {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}

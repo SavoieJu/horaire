@@ -51,6 +51,25 @@ h1 {
       grid-template-columns: repeat(5, 1fr);
 }
 
+.horaire-conteneur .cours .case {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.horaire-conteneur .cours .case span {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
 .horaire-conteneur .cours .perso1 {
   -ms-grid-row: 7;
       grid-row-start: 7;
@@ -122,9 +141,35 @@ h1 {
 }
 
 /*
+    ## Styling
+*/
+/*
     Desc: styling de l'horaire
 */
 body {
   font-family: Arial;
+}
+
+.horaire-conteneur .semaine {
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.9em;
+}
+
+.horaire-conteneur .cours {
+  background-color: #EEEEEE;
+}
+
+.horaire-conteneur .cours .case {
+  background-color: #FFFFFF;
+  text-align: center;
+}
+
+.horaire-conteneur .cours .case span {
+  font-size: 0.7em;
+}
+
+.horaire-conteneur .cours .case span:first-child {
+  font-weight: 700;
 }
 /*# sourceMappingURL=style.css.map */

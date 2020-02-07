@@ -32,6 +32,16 @@ h1 {
         grid-template-rows: repeat(10, 1fr); 
         grid-template-columns: repeat(5, 1fr);
 
+        .case {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            span {
+                align-self: center;
+            }
+        }
+
         .perso1 {
             grid-row-start: 7;
             grid-row-end: 11;
