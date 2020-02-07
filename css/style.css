@@ -11,10 +11,6 @@ body {
   margin: 0;
 }
 
-h1 {
-  text-align: center;
-}
-
 .horaire-conteneur {
   display: -ms-grid;
   display: grid;
@@ -159,6 +155,10 @@ body {
   font-family: Arial;
 }
 
+h1 {
+  text-align: center;
+}
+
 .horaire-conteneur .semaine {
   text-align: center;
   font-weight: 700;
@@ -167,6 +167,7 @@ body {
 
 .horaire-conteneur .heures div {
   border-bottom: 1px solid gray;
+  text-align: right;
 }
 
 .horaire-conteneur .heures div:first-child {

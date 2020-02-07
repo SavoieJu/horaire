@@ -6,6 +6,10 @@ body {
     font-family: Arial;
 }
 
+h1 {
+    text-align: center;
+}
+
 .horaire-conteneur {
 
     .semaine {
@@ -17,6 +21,7 @@ body {
     .heures {
         div {
             border-bottom: 1px solid gray;
+            text-align: right;
             
             &:first-child {
                 border-top: 1px solid gray;
