@@ -7,7 +7,124 @@
 /*
     Desc: Layout de l'horaire
 */
+h1 {
+  text-align: center;
+}
+
+.horaire-conteneur {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: ". semaine" "heures cours";
+  -ms-grid-columns: 120px;
+      grid-template-columns: 120px;
+  -ms-grid-rows: 60px;
+      grid-template-rows: 60px;
+  max-width: 70vw;
+  margin: 0 auto;
+}
+
+.horaire-conteneur .semaine {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: semaine;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+}
+
+.horaire-conteneur .heures {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: heures;
+}
+
+.horaire-conteneur .cours {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: cours;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[10];
+      grid-template-rows: repeat(10, 1fr);
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+}
+
+.horaire-conteneur .cours .perso1 {
+  -ms-grid-row: 7;
+      grid-row-start: 7;
+  grid-row-end: 11;
+}
+
+.horaire-conteneur .cours .commune1 {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  -ms-grid-row: 5;
+      grid-row-start: 5;
+  grid-row-end: 7;
+}
+
+.horaire-conteneur .cours .veille1 {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  -ms-grid-row: 7;
+      grid-row-start: 7;
+  grid-row-end: 11;
+}
+
+.horaire-conteneur .cours .stage {
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  -ms-grid-row: 4;
+      grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+.horaire-conteneur .cours .video1 {
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  -ms-grid-row: 6;
+      grid-row-start: 6;
+  grid-row-end: 9;
+}
+
+.horaire-conteneur .cours .perso2 {
+  -ms-grid-column: 4;
+      grid-column-start: 4;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 5;
+}
+
+.horaire-conteneur .cours .commune2 {
+  -ms-grid-column: 4;
+      grid-column-start: 4;
+  -ms-grid-row: 5;
+      grid-row-start: 5;
+  grid-row-end: 7;
+}
+
+.horaire-conteneur .cours .veille2 {
+  -ms-grid-column: 4;
+      grid-column-start: 4;
+  -ms-grid-row: 7;
+      grid-row-start: 7;
+  grid-row-end: 11;
+}
+
+.horaire-conteneur .cours .video2 {
+  -ms-grid-column: 5;
+      grid-column-start: 5;
+  -ms-grid-row: 6;
+      grid-row-start: 6;
+  grid-row-end: 9;
+}
+
 /*
     Desc: styling de l'horaire
 */
+body {
+  font-family: Arial;
+}
 /*# sourceMappingURL=style.css.map */

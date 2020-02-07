@@ -2,3 +2,88 @@
     Desc: Layout de l'horaire
 */
 
+h1 {
+    text-align: center;
+}
+
+.horaire-conteneur {
+    display: grid;
+    grid-template-areas: ". semaine"
+                         "heures cours";
+    grid-template-columns: 120px;
+    grid-template-rows: 60px;
+    max-width: 70vw;
+    // max-height: 80vh;
+    margin: 0 auto;
+    
+    .semaine {
+        grid-area: semaine;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .heures {
+        grid-area: heures;
+    }
+
+    .cours {
+        grid-area: cours;
+        display: grid;
+        grid-template-rows: repeat(10, 1fr); 
+        grid-template-columns: repeat(5, 1fr);
+
+        .perso1 {
+            grid-row-start: 7;
+            grid-row-end: 11;
+        }
+
+        .commune1 {
+            grid-column-start: 2;
+            grid-row-start: 5; 
+            grid-row-end: 7;
+        }
+
+        .veille1 {
+            grid-column-start: 2;
+            grid-row-start: 7; 
+            grid-row-end: 11;
+        }
+
+        .stage {
+            grid-column-start: 3;
+            grid-row-start: 4; 
+            grid-row-end: 5;
+        }
+
+        .video1 {
+            grid-column-start: 3;
+            grid-row-start: 6; 
+            grid-row-end: 9;
+        }
+
+        .perso2 {
+            grid-column-start: 4;
+            grid-row-start: 1; 
+            grid-row-end: 5;
+        }
+
+        .commune2 {
+            grid-column-start: 4;
+            grid-row-start: 5; 
+            grid-row-end: 7;
+        }
+
+        .veille2 {
+            grid-column-start: 4;
+            grid-row-start: 7; 
+            grid-row-end: 11;
+        }
+
+        .video2 {
+            grid-column-start: 5;
+            grid-row-start: 6; 
+            grid-row-end: 9;
+        }
+
+    }
+}
