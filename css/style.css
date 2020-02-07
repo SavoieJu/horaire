@@ -7,6 +7,10 @@
 /*
     Desc: Layout de l'horaire
 */
+body {
+  margin: 0;
+}
+
 h1 {
   text-align: center;
 }
@@ -31,12 +35,17 @@ h1 {
   display: grid;
   -ms-grid-columns: (1fr)[5];
       grid-template-columns: repeat(5, 1fr);
+  line-height: 60px;
 }
 
 .horaire-conteneur .heures {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: heures;
+}
+
+.horaire-conteneur .heures div {
+  height: 60px;
 }
 
 .horaire-conteneur .cours {
@@ -154,6 +163,14 @@ body {
   text-align: center;
   font-weight: 700;
   font-size: 0.9em;
+}
+
+.horaire-conteneur .heures div {
+  border-bottom: 1px solid gray;
+}
+
+.horaire-conteneur .heures div:first-child {
+  border-top: 1px solid gray;
 }
 
 .horaire-conteneur .cours {

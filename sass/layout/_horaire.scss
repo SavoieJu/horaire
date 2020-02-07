@@ -2,6 +2,10 @@
     Desc: Layout de l'horaire
 */
 
+body {
+    margin: 0;
+}
+
 h1 {
     text-align: center;
 }
@@ -20,10 +24,15 @@ h1 {
         grid-area: semaine;
         display: grid;
         grid-template-columns: repeat(5, 1fr);
+        line-height: 60px;
     }
 
     .heures {
         grid-area: heures;
+
+        div {
+            height: 60px;
+        }
     }
 
     .cours {
